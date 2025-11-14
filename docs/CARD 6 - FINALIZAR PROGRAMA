@@ -1,0 +1,4 @@
+void finalizarSistema() {
+    printf("\nEncerrando o sistema...");
+    printf("\nObrigado por utilizar a Locadora de Veículos!\n");
+}

@@ -1,0 +1,28 @@
+               ┌─────────────┐
+               │    INÍCIO   │
+               └──────┬──────┘
+                      ↓
+              ┌───────────────┐
+              │   LOGIN       │
+              └──────┬────────┘
+     Senha errada? ──► Não ──────────────┐
+         ↑                               │
+         └────────────── Sim ────────────┘ (Acesso negado)
+
+                      ↓
+          ┌───────────────────────┐
+          │     MENU PRINCIPAL    │
+          └──────┬────────────────┘
+                 ↓
+  ┌────────────────────────────────────────────┐
+  │1 Cadastrar Cliente                         │
+  │2 Cadastrar Carro                           │
+  │3 Listar Clientes                           │
+  │4 Listar Carros                             │
+  │5 Alugar Carro                              │
+  │6 Devolver Carro                            │
+  │0 Finalizar                                 │
+  └────────────────────────────────────────────┘
+
+                 ↓
+      Se opção == 0 → FINALIZAR

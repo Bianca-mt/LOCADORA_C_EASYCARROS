@@ -1,0 +1,16 @@
+void listarCarros(struct Carro carros[], int qtd) {
+    if (qtd == 0) {
+        printf("\nNenhum veiculo cadastrado.\n");
+        return;
+    }
+
+    printf("\n--- Lista de Veiculos ---\n");
+    for (int i = 0; i < qtd; i++) {
+        printf("%d. %s | Placa: %s | Diaria: R$%.2f | %s\n",
+               i + 1,
+               carros[i].modelo,
+               carros[i].placa,
+               carros[i].diaria,
+               carros[i].disponivel ? "Disponivel" : "Alugado");
+    }
+}

@@ -1,0 +1,20 @@
+int login() {
+    char usuario[20], senha[20];
+
+    printf("\n=== LOGIN DO SISTEMA ===\n");
+
+    printf("Usuario: ");
+    scanf(" %[^\n]", usuario);
+
+    printf("Senha: ");
+    scanf(" %[^\n]", senha);
+
+    // Verifica se o usuário e senha estão corretos
+    if (strcmp(usuario, "admin") == 0 && strcmp(senha, "1234") == 0) {
+        printf("\nLogin realizado com sucesso!\n");
+        return 1; // liberado
+    } else {
+        printf("\nUsuario ou senha incorretos!\n");
+        return 0; // bloqueado
+    }
+}

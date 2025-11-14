@@ -1,0 +1,28 @@
+void alugarCarro(struct Carro carros[], int qtd) {
+    char placa[10];
+    int dias;
+
+    printf("\nDigite a placa do carro para alugar: ");
+    scanf(" %[^\n]", placa);
+
+    for (int i = 0; i < qtd; i++) {
+        if (strcmp(carros[i].placa, placa) == 0) {
+
+            if (carros[i].disponivel == 0) {
+                printf("Carro ja alugado!\n");
+                return;
+            }
+
+            printf("Quantos dias de aluguel? ");
+            scanf("%d", &dias);
+
+            float total = carros[i].diaria * dias;
+            carros[i].disponivel = 0;
+
+            printf("Aluguel concluido. Total: R$%.2f\n", total);
+            return;
+        }
+    }
+
+    printf("Placa nao encontrada!\n");
+}
