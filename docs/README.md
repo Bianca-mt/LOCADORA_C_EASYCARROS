@@ -125,7 +125,9 @@ python manage.py
 ## Contato:
 
 Autor: Mário Figueiredo
+
 Email: mariowsfigueiredo77@gmail.com
+
 Github: mariowilliam77
 
 
