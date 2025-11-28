@@ -1,17 +1,31 @@
 # EASYCARROS 🚗💨
 
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+
+
 O EASYCARROS foi desenvolvido para digitalizar e otimizar os processos de locação de veículos. Ele reduz a papelada e o tempo gasto em cada transação, oferecendo uma experiência de usuário fluida tanto para a equipe administrativa quanto para os clientes.
 
-**Objetivo:** Oferecer uma plataforma robusta e escalável para gerenciar todos os aspectos de uma operação de locação de veículos.
+**Objetivo:**
+
+Oferecer uma plataforma robusta e escalável para gerenciar todos os aspectos de uma operação de locação de veículos.
 
 **Funcionalidades:**
+
 **Login**: Necessário para autenticar os usuários, controlar o acesso para registrar atividades como de quem realizou tais ações no sistema;
+
 **Cadastro e listagem de veiculos:** permitem o gerenciamento da frota; fornecem informações precisas dos veículos como: modelo, ano, placa e quilometragem;
+
 **Area de alugel:** Onde o usuário poderá realizar a reserva do veiculo e demais informações;
+
 **Devolução:** Registrar a devolução de um veiculo alugado pelo cliente.
 
 
-Pré-requisitos
+## 💻 Pré-requisitos
+
 Antes de começar, certifique-se de ter instalado:
 
 Para rodar o projeto localmente, você precisará ter instalado:
@@ -54,7 +68,7 @@ Para rodar o projeto localmente, você precisará ter instalado:
     # A API estará rodando em [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
     ```
 
-### Passos de Instalação (Frontend - React)
+### Passos de Instalação (Frontend)
 
 1.  **Navegue para o diretório frontend e instale as dependências:**
     ```bash
@@ -68,9 +82,11 @@ Para rodar o projeto localmente, você precisará ter instalado:
     # A interface estará rodando em http://localhost:3000/
     ```
 
-## 💻 Uso
+## ☕ Usando EASYCARROS
 
 Após a instalação, acesse `http://localhost:3000/` no seu navegador. O primeiro passo é criar um usuário administrador através do shell do Django.
+
+
 
 **Exemplo de Funcionalidade:** Gerenciar a frota de veículos no painel de administração.
 * Navegue até o menu "Area de cadastro".
@@ -80,6 +96,20 @@ Após a instalação, acesse `http://localhost:3000/` no seu navegador. O primei
 [Image of a screenshot of the main screen of the project]
 
 * Preencha os dados (Modelo, Placa, Categoria, Valor da Diária, Status).
+  *
+
+  ## 📫 Contribuindo para o EASYCARROS
+
+Para contribuir com <nome_do_projeto>, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
 
 ## 🧪 Executando Testes
 
@@ -88,9 +118,14 @@ Para garantir a qualidade do sistema, rode os testes unitários e de integraçã
 **Backend (Django):**
 ```bash
 cd backend
-python manage.py test
+python manage.py
+ ```
 
-Contato
+
+## Contato:
+
 Autor: Mário Figueiredo
 Email: mariowsfigueiredo77@gmail.com
-GitHub: mariowiiliam77
+Github: mariowilliam77
+
+
