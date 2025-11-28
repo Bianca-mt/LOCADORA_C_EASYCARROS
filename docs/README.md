@@ -26,66 +26,36 @@ Oferecer uma plataforma robusta e escalável para gerenciar todos os aspectos de
 
 ## 💻 Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado:
+• Compilador C (como GCC)
 
-Para rodar o projeto localmente, você precisará ter instalado:
+• Sistema operacional compatível (Windows, Linux ou macOS)
 
-* Node.js (v18+) e npm
-* Python (v3.10+) e pip
-* PostgreSQL (ou Docker para um ambiente conteinerizado)
 
-### Passos de Instalação (Backend - Django)
+## Como Instalar e Executar
 
-1.  **Clone o repositório e navegue para o diretório backend:**
-    ```bash
-    git clone [https://github.com/](https://github.com/Bianca-mt/LOCADORA_C_EASYCARROS.git)
-    cd LOCADORA_C_EASYCARROS/backend
-    ```
+1. Clone o repositório:
+   
+```
+   git clone https://github.com/Bianca-mt/LOCADORA_C_EASYCARROS
+```
 
-2.  **Crie e ative o ambiente virtual e instale as dependências:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # ou venv\Scripts\activate no Windows
-    pip install -r requirements.txt
-    ```
+2. Navegue até o diretório do projeto:
 
-3.  **Configuração do Banco de Dados:**
-    Crie o arquivo `.env` baseado no `.env.example` e configure as credenciais do seu PostgreSQL.
-    ```bash
-    cp .env.example .env
-    # Edite o arquivo .env com suas credenciais de DB
-    ```
+```
+cd LOCADORA_C_EASYCARROS
+```
 
-4.  **Execute as migrações do banco de dados:**
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
+3. Compile o código:
 
-5.  **Execute o servidor Django:**
-    ```bash
-    python manage.py runserver
-    # A API estará rodando em [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-    ```
+```
+gcc main.c -o LOCADORA_C_EASYCARROS
+```
 
-### Passos de Instalação (Frontend)
+4. Execute o programa:
 
-1.  **Navegue para o diretório frontend e instale as dependências:**
-    ```bash
-    cd ../frontend
-    npm install
-    ```
-
-2.  **Execute a aplicação React:**
-    ```bash
-    npm start
-    # A interface estará rodando em http://localhost:3000/
-    ```
-
-## ☕ Usando EASYCARROS
-
-Após a instalação, acesse `http://localhost:3000/` no seu navegador. O primeiro passo é criar um usuário administrador através do shell do Django.
-
+```
+./LOCADORA_C_EASYCARROS
+```
 
 
 **Exemplo de Funcionalidade:** Gerenciar a frota de veículos no painel de administração.
@@ -98,6 +68,25 @@ Após a instalação, acesse `http://localhost:3000/` no seu navegador. O primei
 * Preencha os dados (Modelo, Placa, Categoria, Valor da Diária, Status).
   *
 
+## Como Usar
+
+• Ao executar, siga as instruções no menu ASCII para fazer login, cadastrar-se, listar carros ou devolver veículos.
+
+• Os dados são salvos em arquivos locais, então certifique-se de que o programa tenha permissões para ler/escrever arquivos no diretório.
+
+
+## Estrutura do Projeto
+
+• main.c: Arquivo principal com a lógica do programa.
+
+
+• dados/: Diretório para arquivos de dados (ex.: usuarios.txt, carros.txt).
+
+
+• Outros arquivos: Dependendo da implementação, pode haver headers (.h) ou módulos adicionais.
+
+
+
   ## 📫 Contribuindo para o EASYCARROS
 
 Para contribuir com <nome_do_projeto>, siga estas etapas:
@@ -105,21 +94,11 @@ Para contribuir com <nome_do_projeto>, siga estas etapas:
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
 3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+4. Envie para o branch original: `git push origin LOCADORA_C_EASYCARROS / <local>`
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-
-## 🧪 Executando Testes
-
-Para garantir a qualidade do sistema, rode os testes unitários e de integração em ambas as aplicações.
-
-**Backend (Django):**
-```bash
-cd backend
-python manage.py
- ```
 
 
 ## Contato:
