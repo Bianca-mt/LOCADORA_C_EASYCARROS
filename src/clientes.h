@@ -1,13 +1,23 @@
 #ifndef CLIENTES_H
 #define CLIENTES_H
 
-struct Cliente {
-    char nome[50];
-    char cpf[15];
+// Definição da estrutura de Clientes
+typedef struct {
+    int id;
+    char nome[100];
+    char cpf[15];      
+    char cnh[15];      
     char telefone[20];
-};
+    char endereco[100];
+} Cliente;
 
-void cadastrarCliente(struct Cliente clientes[], int *qtd);
-void listarClientes(struct Cliente clientes[], int qtd);
+
+// Protótipos das funções
+void menuGestaoClientes();
+void cadastrarCliente();
+void listarClientes();
+void removerCliente();
+int buscarClientePorCpf(char *cpfBusca, Cliente *clienteEncontrado);
+int cpfJaCadastrado(char *cpf);
 
 #endif
