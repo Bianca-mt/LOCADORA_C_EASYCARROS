@@ -1,14 +1,15 @@
 #ifndef LOCACOES_H
 #define LOCACOES_H
 #include "clientes.h" 
-#include "carros.h"  
+#include "carros.h" 
+#include <time.h>
 
-// Definição da estrutura de DAta
+// Definiï¿½ï¿½o da estrutura de DAta
 typedef struct {
     int dia, mes, ano;
 } Data;
 
-// Definição da estrutura de Locação
+// Definiï¿½ï¿½o da estrutura de Locaï¿½ï¿½o
 typedef struct {
     int id;
     int idCliente;
@@ -27,10 +28,10 @@ typedef struct {
 } Locacao;
 
 
-// Protótipos das funções
+// Protï¿½tipos das funï¿½ï¿½es
 void menuLocacoes();
 void realizarLocacao(); // Check-out (Retirada)
-void finalizarLocacao();    // Check-in (Devolução)
+void finalizarLocacao();    // Check-in (Devoluï¿½ï¿½o)
 void listarLocacoesAtivas();
 void gerarRelatorioFinanceiro();
 
